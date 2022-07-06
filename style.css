@@ -1,0 +1,52 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/1502893.jpg");
+    background-size: cover;
+}
+
+label {
+    font-size: 40px;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p,
+span {
+    font-size: 25px;
+    color: purple;
+    padding: 10px;
+}
+
+#show_sketch {
+    float: right;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 200px;
+    animation-name: car;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes car {
+    from {
+        box-shadow: 1px 1px 38px purple;
+    }
+    to {
+        box-shadow: 1px 1px 38px navy;
+    }
+}
+
+#score {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+#timer {
+    font-size: 35px;
+    margin-right: 20px;
+    float: right;
+}
